@@ -1,0 +1,21 @@
+{
+  "name": "inmate-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lindsaycarbonell/inmate-scraper/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "cheerio": "^0.22.0",
+    "csv": "^1.1.1",
+    "request": "^2.79.0"
+  }
+}
