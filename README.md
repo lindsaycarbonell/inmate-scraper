@@ -1,6 +1,6 @@
 # inmate-scraper
 
-## What the Client Wants
+## Implementation notes
 I'm interested in these tasks/questions:
 - I'd like to scrape regularly and remove duplicates to create a table derived from "Last 30 Days" that spans a longer time period.
 - What is the distribution of bail bond amounts for those who bonded out in the past 30 days? (Charged and then released).
@@ -9,7 +9,7 @@ I'm interested in these tasks/questions:
 
 In general, I'm looking to **identify people in the extremes**, that is, people who couldn't get out of jail despite low bond amounts, and people who were released despite high bond amounts.
 
-## My thoughts
+## Dev thoughts
 Ideally, I'd like to have this scraper automatically go to a google sheet that has some functions written in for the client to run at their leisure.
 
 That would mean:
