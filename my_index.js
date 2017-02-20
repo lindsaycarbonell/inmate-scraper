@@ -55,9 +55,11 @@ async.waterfall([  //ask for the initial page
       for (var k in state){
         form[k] = state[k];
       }
-      form.__EVENTTARGET = "table[align='center'] [border='0'] [width='98%']";
-      form.__EVENTARGUMENT = '' + VALUES[n];
-      console.log(form);
+      // form.__EVENTTARGET = "table[align='center'] [border='0'] [width='98%']";
+      form.__EVENTTARGET = "ddlDateListing";
+      // form.__EVENTARGUMENT = '' + VALUES[n]
+      form.__EVENTARGUMENT = '30';
+      //console.log(form);
 
       var req = request.post(INDEX, { form },
       function(err, response, body){
@@ -66,7 +68,7 @@ async.waterfall([  //ask for the initial page
         state = extractForm(body);
         //console.log(state);
         pages.push(body);
-        // console.log(body);
+        console.log(body);
         c();
       });
       }, err => next(err, pages));
